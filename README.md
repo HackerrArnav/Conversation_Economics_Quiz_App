@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# Conversation_Economics_Quiz_App
+A beautifully crafted quiz web app to help users practice and test their knowledge of Conversation Economics across 12 weeks. Built with Next.js, Tailwind CSS, and Lucide icons. Includes Practice and Test modes, dynamic week navigation, and responsive UI. Deployed via Vercel.
+>>>>>>> a8a9f6b77ac1b70b3b86984df79cb87c00a4539d
