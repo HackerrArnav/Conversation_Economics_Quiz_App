@@ -36,14 +36,6 @@ export default function Home() {
               Conservation Economics Quiz App
             </h2>
           </div>
-
-
-          {/* <div className="hidden md:flex space-x-4">
-            <Leaf className="text-green-400" size={48} />
-            <TreePine className="text-green-600" size={48} />
-            <Bird className="text-blue-400" size={48} />
-            <Fish className="text-blue-600" size={48} />
-          </div> */}
         </header>
 
 

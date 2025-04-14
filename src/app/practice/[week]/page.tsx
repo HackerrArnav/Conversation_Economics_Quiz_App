@@ -6,9 +6,16 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 
+type Question = {
+    question: string;
+    options: string[];
+    answer: string;
+  };
+
+  
 export default function PracticePage() {
   const { week } = useParams();
-  const [questions, setQuestions] = useState<any[]>([]);
+  const [questions, setQuestions] = useState<Question[]>([]);
   const [userAnswers, setUserAnswers] = useState<{ [key: number]: string }>({});
 
   useEffect(() => {
@@ -108,7 +115,6 @@ export default function PracticePage() {
 
         {questions.map((question, index) => {
           const selected = userAnswers[index];
-          const isCorrect = selected === question.answer;
 
           return (
             <div key={index} className="mb-10 border-2 border-gray-700 rounded">

@@ -5,7 +5,6 @@ import { ArrowLeft, Check, X, RefreshCw } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Question } from "@/types/Question";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 
 export default function QuizPage({ params }: { params: { week: string } }) {
   const week = params.week;

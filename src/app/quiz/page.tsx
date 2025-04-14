@@ -2,7 +2,6 @@
 import React from "react";
 import { questionsByWeek } from "@/data/questions";
 import WeekSelector from "@/components/WeekSelector";
-import Footer from "@/components/Footer";
 import "@/app/globals.css";
 
 export default function QuizWeekSelector() {
