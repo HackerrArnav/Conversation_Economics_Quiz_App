@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import { ArrowRight, Leaf, Bird, Fish, TreePine, Linkedin } from "lucide-react";
+import { ArrowRight, Linkedin } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import Footer from "@/components/Footer";
 import "@/app/globals.css";
 import { Lightbulb, Sliders, TrendingUp } from "lucide-react";
