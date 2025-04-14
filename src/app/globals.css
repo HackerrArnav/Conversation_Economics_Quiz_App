@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #171717;
+  --background: #000000; /* Force black background */
   --foreground: #ffffff;
 }
 
+/* Fix the dark mode override - your current logic overrides black with light */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;
-    --foreground: #0a0a0a;
+    --background: #000000;
+    --foreground: #ffffff;
   }
 }
 
@@ -23,5 +24,78 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #111; /* Slightly lighter black for contrast */
+  color: #ccc;
+  padding: 32px 0;
+  margin-top: 60px;
+  border-top: 1px solid #333;
+  font-size: 0.95rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.siteName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #facc15; /* yellow for brand highlight */
+}
+
+.projectLink {
+  margin-top: 12px;
+}
+
+.link {
+  color: #ccc;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #facc15;
+}
+
+.copyright {
+  text-align: center;
+  color: #666;
+  font-size: 0.8rem;
+  margin-top: 24px;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .logoSection {
+    margin-bottom: 0;
+  }
+
+  .projectLink {
+    margin-top: 0;
   }
 }
