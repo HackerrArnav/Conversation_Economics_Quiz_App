@@ -64,43 +64,35 @@ export default function Home() {
         <section className="flex flex-col md:flex-row justify-between items-center gap-10 mb-12">
           {/* Modes Group */}
           <div className="flex flex-col md:flex-row gap-6 md:gap-8 md:justify-start w-full">
-            <Link
-              href="/quiz"
-              className="inline-flex items-center bg-green-600 text-white font-semibold py-4 px-10 text-lg rounded-full shadow-lg hover:bg-green-700 transition-all group transform hover:scale-105"
-            >
+            <Link href="/quiz" className="inline-flex items-center bg-green-600 text-white font-semibold py-4 px-10 text-lg rounded-full shadow-lg hover:bg-green-700 transition-all group transform hover:scale-105">
               Test Mode
-              <ArrowRight
-                className="ml-3 transition-transform transform group-hover:translate-x-1"
-                size={20}
-              />
+              <ArrowRight className="ml-3 transition-transform transform group-hover:translate-x-1" size={20} />
             </Link>
 
-            <Link
-              href="/practice"
-              className="inline-flex items-center bg-blue-600 text-white font-semibold py-4 px-10 text-lg rounded-full shadow-lg hover:bg-blue-700 transition-all group transform hover:scale-105"
-            >
+            <Link href="/practice" className="inline-flex items-center bg-blue-600 text-white font-semibold py-4 px-10 text-lg rounded-full shadow-lg hover:bg-blue-700 transition-all group transform hover:scale-105">
               Practice Mode
-              <ArrowRight
-                className="ml-3 transition-transform transform group-hover:translate-x-1"
-                size={20}
-              />
+              <ArrowRight className="ml-3 transition-transform transform group-hover:translate-x-1" size={20} />
             </Link>
           </div>
 
-          {/* LinkedIn Link aligned to the right */}
-          <div className="flex justify-end w-full">
-            <a
-              href="https://www.linkedin.com/in/arnav-borse-37a003255/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300"
-            >
+          {/* LinkedIn Link for desktop */}
+          <div className="hidden md:flex justify-end w-full">
+            <a href="https://www.linkedin.com/in/arnav-borse-37a003255/" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300">
               <Linkedin className="mr-2" size={24} />
               Connect on LinkedIn
             </a>
           </div>
         </section>
 
+        {/* LinkedIn Link for mobile */}
+        <div className="flex md:hidden justify-center mb-8">
+          <a href="https://www.linkedin.com/in/arnav-borse-37a003255/" target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center text-gray-300 hover:text-blue-400 transition-colors duration-300">
+            <Linkedin className="mr-2" size={24} />
+            Connect on LinkedIn
+          </a>
+        </div>
 
 
 
