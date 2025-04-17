@@ -7,12 +7,12 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 
 type Question = {
-    question: string;
-    options: string[];
-    answer: string;
-  };
+  question: string;
+  options: string[];
+  answer: string;
+};
 
-  
+
 export default function PracticePage() {
   const { week } = useParams();
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -49,46 +49,37 @@ export default function PracticePage() {
     }
 
     const currentWeekNum = parseInt((week as string).replace("week", ""), 10);
-
-    if (currentWeekNum === 1) {
-      return (
-        <Link
-          href="/practice/week2"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Go to Week 2
-        </Link>
-      );
-    }
-
-    if (currentWeekNum === 12) {
-      return (
-        <Link
-          href="/quiz/all"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          All Quiz
-        </Link>
-      );
-    }
+    const hasNextWeek = !!questionsByWeek[`week${currentWeekNum + 1}`];
 
     return (
       <div className="flex gap-4">
-        <Link
-          href={`/practice/week${currentWeekNum - 1}`}
-          className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600"
-        >
-          Previous Week
-        </Link>
-        <Link
-          href={`/practice/week${currentWeekNum + 1}`}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Next Week
-        </Link>
+        {currentWeekNum > 0 && (
+          <Link
+            href={`/practice/week${currentWeekNum - 1}`}
+            className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600"
+          >
+            Previous Week
+          </Link>
+        )}
+        {hasNextWeek ? (
+          <Link
+            href={`/practice/week${currentWeekNum + 1}`}
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            Next Week
+          </Link>
+        ) : currentWeekNum === 12 ? (
+          <Link
+            href="/quiz/all"
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            All Quiz
+          </Link>
+        ) : null}
       </div>
     );
   };
+
 
   const formatQuestion = (q: string) => {
     return q

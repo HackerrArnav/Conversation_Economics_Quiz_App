@@ -1,6 +1,108 @@
 import { Question } from "@/types/Question";
 
 export const questionsByWeek: { [week: string]: Question[] } = {
+  week0: [
+    {
+      question: "“the ability to produce a good at a lower opportunity cost than another producer” is a definition of",
+      options: [
+        "real advantage",
+        "monetary advantage",
+        "comparative advantage",
+        "opportunity advantage"
+      ],
+      answer: "comparative advantage",
+    },
+    {
+      question: "“fluctuations in economic activity, such as employment and production” are referred to as",
+      options: [
+        "business cycles",
+        "economic cycles",
+        "production cycles",
+        "market cycles"
+      ],
+      answer: "business cycles",
+    },
+    {
+      question: "The property of society getting the most it can from its scarce resources is a definition of",
+      options: [
+        "efficiency",
+        "equality",
+        "prudence",
+        "sustainability"
+      ],
+      answer: "efficiency",
+    },
+    {
+      question: "In the word root for Economics, nemein stands for",
+      options: [
+        "together",
+        "to keep",
+        "house",
+        "manage"
+      ],
+      answer: "manage",
+    },
+    {
+      question: "Whatever must be given up to obtain some item is a definition of",
+      options: [
+        "explicit costs",
+        "implicit costs",
+        "opportunity costs",
+        "phantom costs"
+      ],
+      answer: "opportunity costs",
+    },
+    {
+      question: "Rational decision making compares",
+      options: [
+        "average benefits to average costs",
+        "average benefits to marginal costs",
+        "marginal benefits to average costs",
+        "marginal benefits to marginal costs"
+      ],
+      answer: "marginal benefits to marginal costs",
+    },
+    {
+      question: "“something that induces a person to act” is a definition of",
+      options: [
+        "enticement",
+        "attraction",
+        "incentive",
+        "occupation"
+      ],
+      answer: "incentive",
+    },
+    {
+      question: "Input costs that require an outlay of money are",
+      options: [
+        "explicit costs",
+        "implicit costs",
+        "opportunity costs",
+        "phantom costs"
+      ],
+      answer: "explicit costs",
+    },
+    {
+      question: "The property of distributing economic prosperity uniformly among the members of society is a definition of",
+      options: [
+        "efficiency",
+        "equality",
+        "prudence",
+        "sustainability"
+      ],
+      answer: "equality",
+    },
+    {
+      question: "“the ability of an individual to own and exercise control over scarce resources” is known as",
+      options: [
+        "property rights",
+        "resource rights",
+        "individual rights",
+        "social rights"
+      ],
+      answer: "property rights",
+    },
+  ],  
   week1: [
     {
       question: "In the word root for conservation, con stands for",

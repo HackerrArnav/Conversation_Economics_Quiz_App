@@ -23,9 +23,9 @@ const Footer = () => {
             The EAGLE PROJECT
           </Link>
         </div>
-        <p className="text-sm text-gray-500">
+        {/* <p className="text-sm text-gray-500">
           © {new Date().getFullYear()} All rights reserved.
-        </p>
+        </p> */}
       </div>
     </footer>
   );
